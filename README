@@ -1,0 +1,25 @@
+Negru Mihai-Vlad 332CB
+
+Tema 2 Bibliotecă stdio
+
+Organizare
+	Am urmărtit în realizarea temei crearea unei implementări minimale a bibleotecii 
+stdio, care să permită lucrul cu fișiere.
+
+	În toate functiile cerate am folosit apeluri din kernel verificand valoarea returnata 
+și returnând cod de eroare în caz de eroare.
+	Singura modificare realizată este în momentul în care deschid fișierul verifică tipul 
+acestuia și îmi salveaza flag-utile modului în care deschid fișierul.
+
+Bibliografie
+	https://android.googlesource.com/platform/bionic/+/ics-mr0/libc/stdio/fopen.c
+	https://android.googlesource.com/platform/bionic/+/3884bfe9661955543ce203c60f9225bbdf33f6bb/libc/unistd/popen.c
+
+Implementare
+	Este implementată partea de linux toată și partea de windows fără funcțiile de popen, 
+pclose, daca citești acest README și știi care este problema la popen și pclose te rog 
+contactează-mă am stat trei zile,dar am fost prea incapabil.
+
+Cum se compilează
+	Linux: make
+	Windows: nmake -f Makefile  
